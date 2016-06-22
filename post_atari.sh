@@ -4,7 +4,7 @@
 #CONVERTCR="cat"
 CONVERTCR="tr '\233' '\n'"
 
-# Shall we remove training zeroes?
+# Shall we remove trailing zeroes?
 #TRAIL="cat"
 TRAIL="sed '\$s/\(00\)*..\$//'"
 
