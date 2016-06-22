@@ -12,7 +12,7 @@ pdfimages -all $pdf.$firstpage-$lastpage.pdf databar
 ytop=220
 ybottom=3040
 xleft=120
-xright=2410
+xright=2430
 for i in databar-*.png; do
     echo "Cropping $i, upscaling, thresholding..."
     mogrify -crop $(($xright-$xleft))x$(($ybottom-$ytop))+$xleft+$ytop +repage -resize 300% -threshold 50% $i
