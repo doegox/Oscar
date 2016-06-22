@@ -82,7 +82,7 @@ def linepx2pulses(linepx):
     return pulses
 
 def pulses2nibbles(v):
-    factor_learn=0.5
+    factor_learn=0
     # train width on START seq
     # train ones and zeroes separately due to image contrast
     smallw=[(v[1][1]+v[3][1]+v[5][1])/3.0, 
@@ -186,7 +186,7 @@ for f in sys.argv[1:]:
         if debuglevel > 1:
             print "line #%i: y=%i" % (n, lineindex)
         # sample average of the middle 2/3 of the databar
-        radius=int(bandwidth/3)
+        radius=int(bandwidth/2.1)
         linepx=pix.getavgline(lineindex, radius)
         pulses=linepx2pulses(linepx)
         # do we have a END marker?
