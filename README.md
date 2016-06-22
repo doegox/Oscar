@@ -29,21 +29,24 @@ See http://wiki.yobi.be/wiki/Databar_decoding for the write-up.
   * using unsharp mask
   * setting threshold manually
 
+## Usage
+
+```bash
+oscar.py databar-000.png databar-001.png ...
+```
+
+You can set debuglevel to higher levels if needed.  
+Note that at the moment the script is full of assert so there is not much error handling and it'll break on the first issue ;)
+
 ## TI99/4A
 
 Extracted data look like:
 ```
 ff <64 bytes> cc0000000000000000
 ```
-with cc being a kind of checksum byte.
+with `cc` being a kind of checksum byte.
 
-Data extraction:
-
-```bash
-cat oscar_output.hex|tr -d '\n'|sed 's/00000000ff/00000000\nff/g' > oscar_output2.hex
-sed 's/^ff//;s/..0000000000000000$//' oscar_output2.hex > oscar_output3.hex
-xxd -r -p oscar_output3.hex > oscar_output3.hex.bin
-```
+Data extraction: use `post_ti994a.sh`
 
 ## Atari
 
@@ -53,12 +56,6 @@ Extracted data look like:
 ...
 5555fa <128 bytes> cc # last line
 ```
-with cc being a kind of checksum byte.
+with `cc` being a kind of checksum byte.
 
-Data extraction:
-
-```bash
-cat oscar_output.hex|tr -d '\n'|sed 's/\(5555f[ac]\)/\n\1/g' > oscar_output2.hex
-sed 's/5555f[ac]//;s/..$//' oscar_output2.hex > oscar_output3.hex
-xxd -r -p oscar_output3.hex > oscar_output3.hex.bin
-```
+Data extraction: use `post_atari.sh`
