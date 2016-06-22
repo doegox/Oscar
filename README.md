@@ -1,7 +1,9 @@
 # Oscar
-The DATABAR Oscar was was an optical bar code scanner used to input program code into computers such as Atari 1200XL/1400XL, Atari 400/600/800, Commodore Pet, Commodore VIC 20/64, TI99/4A, TRS 80. Regarding the computer it acts as an ordinary cassette reader.
+The DATABAR Oscar was was an optical bar code scanner used to input program code into computers such as Atari 1200XL/1400XL, Atari 400/600/800, Commodore Pet, Commodore VIC 20/64, TI99/4A and TRS 80.  
+Regarding the computer it acts as an ordinary cassette reader.
 
-Writing a software decoder for databar sheets started with one posted in PoC||GTFO 12 as "puzzle". See http://wiki.yobi.be/wiki/Databar_decoding for the write-up.
+Writing a software decoder for databar sheets started with one posted in PoC||GTFO 12 as "puzzle".  
+See http://wiki.yobi.be/wiki/Databar_decoding for the write-up.
 
 ## Links
 
@@ -11,6 +13,10 @@ Writing a software decoder for databar sheets started with one posted in PoC||GT
 * http://www.mainbyte.com/ti99/hardware/oscar/oscar_man.pdf
 * https://www.google.com/patents/US4550247
 * https://www.google.com/patents/US4521678
+
+### Atari databar books
+
+* https://archive.org/details/@allan52?and[]=databar
 
 ## Tips
 
