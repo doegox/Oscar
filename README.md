@@ -25,9 +25,11 @@ See http://wiki.yobi.be/wiki/Databar_decoding for the write-up.
 * Use scans as larges as possible.
 * If needed you can enhance scans by
 
-  * scaling up (x2)
+  * scaling up (x2, x4)
   * using unsharp mask
   * setting threshold manually
+
+It may sound silly to scale up but it makes sense because the whole operation is to be seen as a conversion from luminosity to space, same as converting audio to 1-bit sampling at very high frequency.
 
 ## Usage
 
