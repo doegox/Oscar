@@ -175,9 +175,11 @@ def parsenibbles(nibbles):
         print "checksum:  0x%02X = %s" % (bytes[-1],
             ['incorrect!', 'correct'][(sum(bytes) & 0xff)==0])
     if 'DATA LINE' in function:
-        data=bytes[3:-1]
-        print(''.join(["%02x" % x for x in data]))
+        return bytes[3:-1]
+    return None
 
+fnibble=open('databar_raw.hex', 'wb')
+fdata=open('databar_payload_raw.hex', 'wb')
 for f in sys.argv[1:]:
     pix=Pix(f)
     goodlines=findlines(pix)
@@ -192,4 +194,9 @@ for f in sys.argv[1:]:
         # do we have a END marker?
         assert pulses[-1][1] > (pulses[0][1]*5)
         nibbles=pulses2nibbles(pulses)
-        parsenibbles(nibbles)
+        fnibble.write(''.join(["%x" % x for x in nibbles])+'\n')
+        data=parsenibbles(nibbles)
+        if data:
+            fdata.write(''.join(["%02x" % x for x in data])+'\n')
+            print(''.join(["%02x" % x for x in data]))
+            sys.stdout.flush()
