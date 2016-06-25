@@ -11,9 +11,10 @@ wget https://archive.org/download/DatabarFinancialQuizAtari/Databar_Financial_Qu
 wget https://archive.org/download/DatabarTriangleSolutionsAtari/Databar_Triangle_Solutions_Atari.pdf
 ./process_archive_atari.sh Databar_Triangle_Solutions_Atari.pdf 3 end
 wget https://archive.org/download/DatabarProgramInBasicAtari/Databar_Program_In_Basic_Atari.pdf
-./process_archive_atari.sh Databar_Program_In_Basic_Atari.pdf 3 end
-dd if=Databar_Program_In_Basic_Atari/databar_payload.bin of=Databar_Program_In_Basic_Atari/databar_payload1.bin bs=1 count=$((0x701))
-dd if=Databar_Program_In_Basic_Atari/databar_payload.bin of=Databar_Program_In_Basic_Atari/databar_payload2.bin bs=1 skip=$((0x780))
+./process_archive_atari.sh Databar_Program_In_Basic_Atari.pdf 3 4
+mv Databar_Program_In_Basic_Atari Databar_Oscars_Drill_Atari
+./process_archive_atari.sh Databar_Program_In_Basic_Atari.pdf 5 6
+mv Databar_Program_In_Basic_Atari Databar_Miles_Per_Gallon_Atari
 wget https://archive.org/download/DatabarWordHabitsAtari/Databar_Word_Habits_Atari.pdf
 ./process_archive_atari.sh Databar_Word_Habits_Atari.pdf 3 end
 wget https://archive.org/download/DatabarMathChallengeOneAtari/Databar_Math_Challenge_One_Atari.pdf
