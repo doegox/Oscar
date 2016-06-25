@@ -18,10 +18,10 @@ for i in databar-*.png; do
     mogrify -crop $(($xright-$xleft))x$(($ybottom-$ytop))+$xleft+$ytop +repage -resize 300% -threshold 50% $i
 done
 echo "Oscar..."
-./oscar.py databar-*.png 2> $pdf.$firstpage-$lastpage.log| tee databar.hex
-./post_atari.sh databar.hex
+../../oscar.py databar-*.png 2> $pdf.$firstpage-$lastpage.log
+../../post_atari.sh databar_payload_raw.hex
 d=${pdf%.pdf}
 mkdir $d
-mv databar.hex databar.hex.bin $d
+mv databar_raw.hex databar_payload_raw.hex databar_payload.bin $d
 rm databar-*.png
 rm $pdf.$firstpage-$lastpage.pdf

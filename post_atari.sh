@@ -8,11 +8,12 @@ CONVERTCR="tr '\233' '\n'"
 #TRAIL="cat"
 TRAIL="sed '\$s/\(00\)*..\$//'"
 
-cat $1|\
+file=$1
+cat $file|\
     tr -d '\n'|\
     sed 's/\(5555f[ac].\{256\}..\)/\1\n/g'|\
     sed '/^5555f[ac].\{256\}..$/!d'|\
     sed 's/5555f[ac]//;s/..$//'|\
     eval $TRAIL|\
     xxd -r -p|\
-    eval $CONVERTCR > $1.bin
+    eval $CONVERTCR > ${file%_raw.hex}.bin
