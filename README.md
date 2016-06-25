@@ -14,9 +14,13 @@ See http://wiki.yobi.be/wiki/Databar_decoding for the write-up.
 * https://www.google.com/patents/US4550247
 * https://www.google.com/patents/US4521678
 
-### Atari databar books
+### Atari Databar Magazine scans
 
 * https://archive.org/details/@allan52?and[]=databar
+
+### TI99-4A Databar Magazine scans
+
+* https://ia801509.us.archive.org/29/items/DatabarMagazineTI994A/Databar%20magazine%20TI994A_images.zip (5Gb)
 
 ## Tips
 
