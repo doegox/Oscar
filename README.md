@@ -46,11 +46,12 @@ Note that at the moment the script is full of assert so there is not much error 
 
 ## TI99/4A
 
-Extracted data look like:
+Databar reuses the Cassette tape *records* format (see [here](http://www.unige.ch/medecine/nouspikel/ti99/cassette.htm#Cassette%20tape%20format)):
+
 ```
 ff <64 bytes> cc0000000000000000
 ```
-with `cc` being a kind of checksum byte.
+with `cc` being a checksum byte equal to the sum of the 64 bytes.
 
 Data extraction: use `post_ti994a.sh`
 
