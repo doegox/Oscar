@@ -65,3 +65,17 @@ Extracted data look like:
 with `cc` being a kind of checksum byte.
 
 Data extraction: use `post_atari.sh`
+
+## Commodore 64
+
+Extracted data look like:
+```
+89888786858483828102 <191 bytes> cc
+```
+with `cc` being a kind of checksum byte.
+
+Data extraction: use `post_c64.sh`
+
+[Commodore BASIC tokenized files](http://fileformats.archiveteam.org/wiki/Commodore_BASIC_tokenized_file) can be converted with [detox64](http://freshmeat.sourceforge.net/projects/detox64) or [CBM BASIC Lister](https://www.luigidifraia.com/c64/index.htm#BL).
+
+The ``.txt`` files available in the ``results`` were produced by a version of detox64 slightly modified to convert unprintable chars by ``\xNN`` notation.
