@@ -73,7 +73,7 @@ Extracted data look like:
 ```
 89888786858483828102 <191 bytes> cc
 ```
-with `cc` being a kind of checksum byte.
+with `cc` being a checksum byte equal to the xor of "02" and the 191 bytes.
 
 Data extraction: use `post_c64.sh`
 
