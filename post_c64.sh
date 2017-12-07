@@ -6,6 +6,7 @@ TRAIL="cat"
 
 file=$1
 (
+  # Databar stores ROM file, add the default BASIC load address ($0801) to make a PRG:
   echo 0108;
   cat $file|\
     tr -d '\n'|\

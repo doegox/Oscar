@@ -72,11 +72,17 @@ Data extraction: use `post_atari.sh`
 
 ## Commodore 64
 
+Databar reuses the Cassette tape *data block for SEQ file* format (see [here](http://c64tapes.org/tape_loaders.php)):
+
 Extracted data look like:
 ```
 89888786858483828102 <191 bytes> cc
 ```
-with `cc` being a checksum byte equal to the xor of "02" and the 191 bytes.
+
+* *Sync train* `89 88 87 86 85 84 83 82 81` as for the *first copy* of a block.
+* *file type* = `02` : *Data block for SEQ file*
+* *Data body* : 171+20 bytes
+* *Data checkbyte* `cc` : checksum byte equal to the xor of all 192 bytes from *file type* byte (`02`) to the end.
 
 Data extraction: use `post_c64.sh`
 
