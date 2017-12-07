@@ -57,13 +57,16 @@ Data extraction: use `post_ti994a.sh`
 
 ## Atari
 
-Extracted data look like:
+Databar reuses the Cassette tape *records* format (see [here](https://www.atariarchives.org/dere/chaptC.php)):
+
 ```
 5555fc <128 bytes> cc
 ...
 5555fa <128 bytes> cc # last line
 ```
-with `cc` being a kind of checksum byte.
+with `cc` being a checksum byte equal to the sum with endaround carry of the 131 bytes (so carry bits are added to the cc byte too).
+
+`fc` indicates a full record; `fa` indicates a partial record, its size being recorded just before the `cc` byte.
 
 Data extraction: use `post_atari.sh`
 
