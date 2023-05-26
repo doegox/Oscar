@@ -16,18 +16,18 @@ See https://wiki.yobi.be/index.php/Databar_decoding for the write-up.
 
 ### Atari Databar Magazine scans
 
-* [https://archive.org/details/DatabarMagazineAtariEdition scans]
-* [https://archive.org/details/AtariDatabarOSCARSoftware restored software]
+* [scans](https://archive.org/details/DatabarMagazineAtariEdition)
+* [restored software](https://archive.org/details/AtariDatabarOSCARSoftware)
 
 ### TI99-4A Databar Magazine scans
 
-* [https://archive.org/details/DatabarMagazineTI994A scans]
-* [https://archive.org/details/TI994ADatabarOSCARSoftware restored software]
+* [scans](https://archive.org/details/DatabarMagazineTI994A)
+* [restored software](https://archive.org/details/TI994ADatabarOSCARSoftware)
 
 ### Commodore 64 Databar Magazine scans
 
-* [https://archive.org/details/DatabarMagazineCommodoreEdition scans]
-* [https://archive.org/details/C64DatabarOSCARSoftware restored software]
+* [scans](https://archive.org/details/DatabarMagazineCommodoreEdition)
+* [restored software](https://archive.org/details/C64DatabarOSCARSoftware)
 
 ## Tips
 
