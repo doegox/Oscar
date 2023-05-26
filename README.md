@@ -3,7 +3,7 @@ The DATABAR Oscar was an optical bar code scanner used to input program code int
 Regarding the computer it acts as an ordinary cassette reader.
 
 Writing a software decoder for databar sheets started with one posted in PoC||GTFO 12 as "puzzle".  
-See http://wiki.yobi.be/wiki/Databar_decoding for the write-up.
+See https://wiki.yobi.be/index.php/Databar_decoding for the write-up.
 
 ## Links
 
@@ -16,11 +16,18 @@ See http://wiki.yobi.be/wiki/Databar_decoding for the write-up.
 
 ### Atari Databar Magazine scans
 
-* https://archive.org/details/@allan52?and[]=databar
+* [https://archive.org/details/DatabarMagazineAtariEdition scans]
+* [https://archive.org/details/AtariDatabarOSCARSoftware restored software]
 
 ### TI99-4A Databar Magazine scans
 
-* https://ia801509.us.archive.org/29/items/DatabarMagazineTI994A/Databar%20magazine%20TI994A_images.zip (5Gb)
+* [https://archive.org/details/DatabarMagazineTI994A scans]
+* [https://archive.org/details/TI994ADatabarOSCARSoftware restored software]
+
+### Commodore 64 Databar Magazine scans
+
+* [https://archive.org/details/DatabarMagazineCommodoreEdition scans]
+* [https://archive.org/details/C64DatabarOSCARSoftware restored software]
 
 ## Tips
 
